@@ -1,3 +1,21 @@
-# React Phantom Web App
+## React Boilerplate Web App 🤓
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### About this repo
+Super simple and basic setup of the React App that come pre-configured with context, navigation & Bootstrap to speedup kick start of the project.
+
+### Basic Usage
+
+- Clone the repo [React Boilerplate](https://github.com/EdAncerys/react-boilerplate)
+
+- Navigate to root & install packages:
+
+  `yarn` or `npm install`
+
+- Run app with:
+
+  `npm start`
+
+That's it!  Good luck
+
+# 👹
+

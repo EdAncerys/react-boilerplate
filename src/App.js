@@ -3,13 +3,12 @@ import { AppProvider } from './context';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import { FrontPage } from './components/FrontPage';
-import { ComponentOne, ComponentTwo, Home } from './components/TestComponents';
+import { ComponentOne, ComponentTwo, Home } from './screens/DummyScreens';
 
 export const App = () => {
   // SERVERS ----------------------------
-
-  return (
-    <Router>
+  const ServeNavBar = () => {
+    return (
       <nav>
         <ul>
           <li>
@@ -21,16 +20,27 @@ export const App = () => {
           <li>
             <Link to="/users">Users</Link>
           </li>
+          <li>
+            <Link to="/page">Front Page</Link>
+          </li>
         </ul>
       </nav>
+    );
+  };
+
+  return (
+    <Router>
+      <ServeNavBar />
       <Switch>
         <AppProvider>
-          {/* <FrontPage /> */}
           <Route path="/about">
             <ComponentOne />
           </Route>
           <Route path="/users">
             <ComponentTwo />
+          </Route>
+          <Route path="/page">
+            <FrontPage />
           </Route>
           <Route path="/" exact>
             <Home />
